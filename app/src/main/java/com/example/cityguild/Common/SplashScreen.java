@@ -1,4 +1,4 @@
-package com.example.cityguild;
+package com.example.cityguild.Common;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,6 +10,9 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.example.cityguild.R;
+import com.example.cityguild.User.UserDashboard;
 
 public class SplashScreen extends AppCompatActivity {
 
@@ -48,7 +51,7 @@ public class SplashScreen extends AppCompatActivity {
             @Override
             public void run() {
 
-                Intent intent = new Intent(getApplicationContext(),UserDashboard.class);
+                Intent intent = new Intent(getApplicationContext(), UserDashboard.class);
                 startActivity(intent);
                 finish();
 

@@ -21,4 +21,23 @@
     <string name="next_btn">Next</string>
     <string name="let_get_started">Lets Get Started</string>
 
+
+<!--    Strings For Dashboard-->
+
+<!--    categories -->
+    <string name="hotels">Hotels</string>
+    <string name="banks">Banks</string>
+    <string name="restaurants">Restaurants</string>
+    <string name="shops">Shops</string>
+    <string name="airports">Airports</string>
+
+<!--    titles and descriptions-->
+    <string name="featured_locations">All Featured Locations</string>
+    <string name="featured_locations_description">All The Locations are featured and are Top on List</string>
+    <string name="most_viewed_locations">Most Viewed</string>
+    <string name="categories">Categories</string>
+    <string name="view_all">View All</string>
+    <string name="search_text">Search ...</string>
+
+
 </resources>

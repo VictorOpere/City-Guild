@@ -8,8 +8,8 @@
 
     <ImageView
         android:id="@+id/sliderImage"
-        android:layout_width="406dp"
-        android:layout_height="338dp"
+        android:layout_width="411dp"
+        android:layout_height="278dp"
         android:padding="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -48,6 +48,8 @@
         android:text="@string/first_slide_desc"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sliderText" />
+        app:layout_constraintTop_toBottomOf="@+id/sliderText"
+        app:layout_constraintVertical_bias="0.233" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Onboarding"
+    tools:context=".Common.Onboarding"
     android:padding="10dp">
 
 
@@ -36,10 +36,12 @@
             android:background="@color/colorPrimary" />
 
         <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/dots"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:paddingBottom="20dp" />
+            android:paddingBottom="20dp"
+            android:orientation="horizontal"/>
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/next_btn"

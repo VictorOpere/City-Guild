@@ -1,14 +1,17 @@
-package com.example.cityguild;
+package com.example.cityguild.Common;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class Onboarding extends AppCompatActivity {
+import com.example.cityguild.R;
+
+public class MainActivity extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_onboarding);
+        setContentView(R.layout.activity_main);
     }
 }
