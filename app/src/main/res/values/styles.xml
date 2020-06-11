@@ -8,4 +8,16 @@
         <item name="android:statusBarColor">@color/colorPrimary</item>
     </style>
 
+<!--    menu navigation style -->
+    <style name="NavigationStyle">
+
+<!--        color of text and item when selected -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+
+<!--        background color-->
+
+        <item name="colorControlHighlight">#000</item>
+
+    </style>
+
 </resources>

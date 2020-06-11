@@ -1,12 +1,18 @@
 package com.example.cityguild.User;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.graphics.Color;
 import android.os.Bundle;
+import android.view.MenuItem;
+import android.view.View;
 import android.view.WindowManager;
+import android.widget.ImageView;
 
 import com.example.cityguild.HelperClasses.HomeAdapter.CategoriesAdapter;
 import com.example.cityguild.HelperClasses.HomeAdapter.CategoriesHelperClass;
@@ -19,12 +25,13 @@ import com.google.android.material.navigation.NavigationView;
 
 import java.util.ArrayList;
 
-public class UserDashboard extends AppCompatActivity {
+public class UserDashboard extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
 //    variables
 
     RecyclerView featuredRecycler, mostViewedRecycler, categoriesRecycler;
     RecyclerView.Adapter adapter;
+    ImageView menuIcon;
 
 //    drawer variables
 
@@ -51,7 +58,18 @@ public class UserDashboard extends AppCompatActivity {
 //        drawer layout hooks
         drawerLayout = (DrawerLayout)findViewById(R.id.drawer_layout);
         navigationView = (NavigationView) findViewById(R.id.navigation_layout);
-        
+
+//        menu icon hook
+        menuIcon = (ImageView) findViewById(R.id.menu_icon);
+
+
+
+
+//        menu icon to open
+
+        navigationDrawer();
+
+
 
 
 
@@ -66,6 +84,68 @@ public class UserDashboard extends AppCompatActivity {
 
 
     }
+
+//    navigation drawer functions
+
+    private void navigationDrawer() {
+
+        //        navigation drawer
+
+        navigationView.bringToFront();
+        navigationView.setNavigationItemSelectedListener(this);
+        navigationView.setCheckedItem(R.id.nav_home);
+
+//        menu icon
+
+        menuIcon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if(drawerLayout.isDrawerVisible(GravityCompat.START)){
+
+                    drawerLayout.closeDrawer(GravityCompat.START);
+
+
+                }else{
+
+                    drawerLayout.openDrawer(GravityCompat.START);
+
+                }
+
+            }
+        });
+
+
+        animateNavigationDrawer();
+
+    }
+
+    private void animateNavigationDrawer() {
+
+        drawerLayout.setScrimColor(Color.parseColor("#FCF3CF"));
+    };
+
+    @Override
+    public void onBackPressed() {
+
+        if (drawerLayout.isDrawerVisible(GravityCompat.START)){
+
+            drawerLayout.closeDrawer(GravityCompat.START);
+        }else{
+
+            super.onBackPressed();
+
+        }
+
+    }
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        return true;
+    }
+
+
+//    recycler views functions
+
 
     private void categoriesRecycler() {
 
@@ -120,4 +200,6 @@ public class UserDashboard extends AppCompatActivity {
 
 
     }
+
+
 }
