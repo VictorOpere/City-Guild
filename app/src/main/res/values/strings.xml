@@ -24,7 +24,7 @@
 
 <!--    Strings For Dashboard-->
 
-<!--    categories -->
+<!--    categories_card_design -->
     <string name="hotels">Hotels</string>
     <string name="banks">Banks</string>
     <string name="restaurants">Restaurants</string>

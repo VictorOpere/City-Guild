@@ -259,7 +259,8 @@
                         android:layout_marginTop="50dp"
                         android:textColor="@color/colorAccent"
                         android:layout_marginLeft="10dp"
-                        android:textAllCaps="true" />
+                        android:textAllCaps="true"
+                        android:fontFamily="@font/julee"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -276,7 +277,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="280dp"
                     android:layout_toRightOf="@+id/featured_background"
-                    android:background="@color/home_background">
+                    android:background="@color/home_background"
+                    android:id="@+id/featured_recycler">
+
 
                 </androidx.recyclerview.widget.RecyclerView>
 
@@ -319,7 +322,8 @@
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:id="@+id/most_viewed_recycler"/>
 
             </LinearLayout>
 
@@ -357,7 +361,8 @@
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:id="@+id/categories_recycler"/>
 
             </LinearLayout>
 

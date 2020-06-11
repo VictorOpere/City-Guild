@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:elevation="10dp"
+    android:background="@drawable/card_3"
+    android:layout_margin="12dp">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:padding="15dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:src="@drawable/sit_back_and_relax"
+            android:scaleType="centerCrop"
+            android:id="@+id/cat_image"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/cat_image"
+            android:layout_marginLeft="10dp"
+            android:textSize="30sp"
+            android:fontFamily="@font/julee"
+            android:text="KFC Shop"
+            android:id="@+id/cat_text"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This is A Prime Fast Food Joint"
+            android:layout_below="@id/cat_text"
+            android:layout_toRightOf="@id/cat_image"
+            android:padding="10dp"
+            android:id="@+id/cat_description"/>
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
