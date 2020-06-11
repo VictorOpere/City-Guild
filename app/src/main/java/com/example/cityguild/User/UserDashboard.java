@@ -1,6 +1,7 @@
 package com.example.cityguild.User;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -14,13 +15,22 @@ import com.example.cityguild.HelperClasses.HomeAdapter.FeaturedHelper;
 import com.example.cityguild.HelperClasses.HomeAdapter.MostViewedAdapter;
 import com.example.cityguild.HelperClasses.HomeAdapter.MostViewedHelperClass;
 import com.example.cityguild.R;
+import com.google.android.material.navigation.NavigationView;
 
 import java.util.ArrayList;
 
 public class UserDashboard extends AppCompatActivity {
 
+//    variables
+
     RecyclerView featuredRecycler, mostViewedRecycler, categoriesRecycler;
     RecyclerView.Adapter adapter;
+
+//    drawer variables
+
+    DrawerLayout drawerLayout;
+    NavigationView navigationView;
+
 
 
     @Override
@@ -31,14 +41,26 @@ public class UserDashboard extends AppCompatActivity {
         setContentView(R.layout.activity_user_dashboard);
 
 
+//        recycler hooks
+
         featuredRecycler = (RecyclerView) findViewById(R.id.featured_recycler);
         mostViewedRecycler = (RecyclerView) findViewById(R.id.most_viewed_recycler);
         categoriesRecycler = (RecyclerView) findViewById(R.id.categories_recycler);
 
 
+//        drawer layout hooks
+        drawerLayout = (DrawerLayout)findViewById(R.id.drawer_layout);
+        navigationView = (NavigationView) findViewById(R.id.navigation_layout);
+        
+
+
+
+
+
         featuredRecycler();
         mostViewedRecycler();
         categoriesRecycler();
+
 
 
 

@@ -40,4 +40,20 @@
     <string name="search_text">Search ...</string>
 
 
+<!--    for the drawer menu-->
+    <string name="nav_home">Home</string>
+    <string name="nav_search">Search</string>
+    <string name="all_categories">All Categories</string>
+    <string name="add_missing_place">Add Missing Place</string>
+    <string name="nav_login">Log In</string>
+    <string name="nav_logout">Log Out</string>
+    <string name="nav_profile">Profile</string>
+    <string name="nav_share">Share</string>
+    <string name="nav_rate_us">Rate Us</string>
+
+
+
+
+
+
 </resources>
