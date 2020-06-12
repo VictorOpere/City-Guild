@@ -22,16 +22,16 @@
     <string name="let_get_started">Lets Get Started</string>
 
 
-<!--    Strings For Dashboard-->
+    <!--    Strings For Dashboard-->
 
-<!--    categories_card_design -->
+    <!--    categories_card_design -->
     <string name="hotels">Hotels</string>
     <string name="banks">Banks</string>
     <string name="restaurants">Restaurants</string>
     <string name="shops">Shops</string>
     <string name="airports">Airports</string>
 
-<!--    titles and descriptions-->
+    <!--    titles and descriptions-->
     <string name="featured_locations">All Featured Locations</string>
     <string name="featured_locations_description">All The Locations are featured and are Top on List</string>
     <string name="most_viewed_locations">Most Viewed</string>
@@ -40,7 +40,7 @@
     <string name="search_text">Search ...</string>
 
 
-<!--    for the drawer menu-->
+    <!--    for the drawer menu-->
     <string name="nav_home">Home</string>
     <string name="nav_search">Search</string>
     <string name="all_categories">All Categories</string>
@@ -50,10 +50,6 @@
     <string name="nav_profile">Profile</string>
     <string name="nav_share">Share</string>
     <string name="nav_rate_us">Rate Us</string>
-
-
-
-
 
 
 </resources>
