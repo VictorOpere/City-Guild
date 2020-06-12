@@ -52,4 +52,17 @@
     <string name="nav_rate_us">Rate Us</string>
 
 
+<!--    for categories-->
+    <string name="car_rent">Car Rent</string>
+    <string name="expand_all">Expand All</string>
+    <string name="eatery">Eatery</string>
+    <string name="banking">Banking</string>
+    <string name="shopping">Shopping</string>
+
+
+
+
+
+
+
 </resources>
