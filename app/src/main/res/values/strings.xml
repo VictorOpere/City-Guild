@@ -52,17 +52,22 @@
     <string name="nav_rate_us">Rate Us</string>
 
 
-<!--    for categories-->
+    <!--    for categories-->
     <string name="car_rent">Car Rent</string>
     <string name="expand_all">Expand All</string>
     <string name="eatery">Eatery</string>
     <string name="banking">Banking</string>
     <string name="shopping">Shopping</string>
 
-
-
-
-
+<!--    ToDo Sign Up  Screen Details-->
+    <string name="signup">Sign Up</string>
+    <string name="login">Log In</string>
+    <string name="retailer_heading">Grow\nYour Business</string>
+    <string name="retailer_tag_line">We will help you to grow your business using Online Services </string>
+    <string name="create_account">Create\nAccount</string>
+    <string name="how_we_work">How We Work?</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="forget_password">Forget Password</string>
 
 
 </resources>

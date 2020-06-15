@@ -49,7 +49,9 @@
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:padding="5dp"
-            android:background="@color/banner_background"/>
+            android:background="@color/banner_background"
+            android:id="@+id/menu_loginsignup"
+            android:onClick="callRetailerScreen" />
 
 
 

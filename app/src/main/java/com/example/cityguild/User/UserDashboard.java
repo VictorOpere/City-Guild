@@ -15,6 +15,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.ImageView;
 
+import com.example.cityguild.Common.LoginSignup.RetailerStartUpScreen;
 import com.example.cityguild.HelperClasses.HomeAdapter.CategoriesAdapter;
 import com.example.cityguild.HelperClasses.HomeAdapter.CategoriesHelperClass;
 import com.example.cityguild.HelperClasses.HomeAdapter.FeaturedAdapter;
@@ -125,6 +126,18 @@ public class UserDashboard extends AppCompatActivity implements NavigationView.O
 
         drawerLayout.setScrimColor(Color.parseColor("#FCF3CF"));
     };
+
+//    normal functions
+
+    public void callRetailerScreen(View view){
+
+        startActivity(new Intent(getApplicationContext(), RetailerStartUpScreen.class));
+
+
+
+
+
+    }
 
     @Override
     public void onBackPressed() {
