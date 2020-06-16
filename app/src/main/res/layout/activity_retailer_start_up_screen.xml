@@ -54,7 +54,12 @@
                 android:layout_weight="1"
                 android:layout_marginRight="10dp"
                 android:background="@color/colorPrimary"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black"
+                android:id="@+id/login_btn"
+                android:onClick="callLoginScreen"
+                android:transitionName="transition_login"/>
+
+
 
             <Button
                 android:layout_width="0dp"
@@ -63,7 +68,10 @@
                 android:layout_weight="1"
                 android:layout_marginLeft="10dp"
                 android:background="@color/colorPrimary"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black"
+                android:id="@+id/signup_btn"
+                />
+
 
 
 

@@ -59,7 +59,7 @@
     <string name="banking">Banking</string>
     <string name="shopping">Shopping</string>
 
-<!--    ToDo Sign Up  Screen Details-->
+    <!--    ToDo Sign Up  Screen Details-->
     <string name="signup">Sign Up</string>
     <string name="login">Log In</string>
     <string name="retailer_heading">Grow\nYour Business</string>
@@ -68,6 +68,12 @@
     <string name="how_we_work">How We Work?</string>
     <string name="remember_me">Remember Me</string>
     <string name="forget_password">Forget Password</string>
+
+<!--    Login Screen Details-->
+    <string name="enter_username">Enter UserName</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="remember_password">Remember Password</string>
+    <string name="forgot_password">Forgot Password?</string>
 
 
 </resources>
