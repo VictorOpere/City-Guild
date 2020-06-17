@@ -69,11 +69,21 @@
     <string name="remember_me">Remember Me</string>
     <string name="forget_password">Forget Password</string>
 
-<!--    Login Screen Details-->
+    <!--    Login Screen Details-->
     <string name="enter_username">Enter UserName</string>
     <string name="enter_password">Enter Password</string>
     <string name="remember_password">Remember Password</string>
     <string name="forgot_password">Forgot Password?</string>
+
+
+    <!--    sign up details-->
+
+
+    <string name="signup_create_account">Create Account</string>
+    <string name="enter_full_name">Full Name</string>
+    <string name="enter_email">Email</string>
+    <string name="enter_phone_number">Phone Number</string>
+    <string name="signup_next_btn">Next</string>
 
 
 </resources>

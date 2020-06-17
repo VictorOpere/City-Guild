@@ -70,7 +70,7 @@
                 android:background="@color/colorPrimary"
                 android:textColor="@color/black"
                 android:id="@+id/signup_btn"
-                />
+                android:onClick="callSignUpScreen"/>
 
 
 
