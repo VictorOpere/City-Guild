@@ -86,4 +86,26 @@
     <string name="signup_next_btn">Next</string>
 
 
+    <!--    otp screen details-->
+
+    <string name="otp_code_text">Co\nde</string>
+    <string name="otp_verification_text">Verification</string>
+    <string name="otp_description_text">Enter A One Time Password</string>
+
+    <!--    forget password-->
+
+
+    <string name="forget_password_detail">Provide Your Accounts Email For Which You Want To Reset Your Password</string>
+
+
+<!--    make selection-->
+
+    <string name="make_selection">Make Selection</string>
+    <string name="make_selection_detail">Select Which Contact Detail You Should Use To Reset Your Password</string>
+    <string name="via_sms">Via SMS</string>
+    <string name="via_email">Via MAIL</string>
+
+
+
+
 </resources>
