@@ -98,12 +98,22 @@
     <string name="forget_password_detail">Provide Your Accounts Email For Which You Want To Reset Your Password</string>
 
 
-<!--    make selection-->
+    <!--    make selection-->
 
     <string name="make_selection">Make Selection</string>
     <string name="make_selection_detail">Select Which Contact Detail You Should Use To Reset Your Password</string>
     <string name="via_sms">Via SMS</string>
     <string name="via_email">Via MAIL</string>
+
+
+    <!--    set new password-->
+
+    <string name="new_credentials">New Credentials</string>
+    <string name="new_credentials_detail">Your Identity Has Been Verified! Set Your New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="password_updated">Password Updated</string>
+    <string name="password_updated_success">Your Password Has Been Updated</string>
+
 
 
 

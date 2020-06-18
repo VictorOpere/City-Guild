@@ -94,8 +94,7 @@
             android:layout_marginTop="20dp"
             android:elevation="5dp"
             android:transitionName="transition_next_btn"
-            android:id="@+id/signup_next_button"
-            android:onClick="callNextSignupScreen"/>
+            android:id="@+id/signup_next_button"/>
 
 
         <Button
@@ -109,7 +108,8 @@
             android:elevation="5dp"
             android:fontFamily="@font/muli_black"
             android:transitionName="transition_login_btn"
-            android:id="@+id/signup_login_button"/>
+            android:id="@+id/signup_login_button"
+            android:onClick="callLoginScreenFromSignUp"/>
 
 
 

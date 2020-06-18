@@ -15,6 +15,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.ImageView;
 
+import com.example.cityguild.Common.LoginSignup.Login;
 import com.example.cityguild.Common.LoginSignup.RetailerStartUpScreen;
 import com.example.cityguild.HelperClasses.HomeAdapter.CategoriesAdapter;
 import com.example.cityguild.HelperClasses.HomeAdapter.CategoriesHelperClass;
@@ -161,6 +162,11 @@ public class UserDashboard extends AppCompatActivity implements NavigationView.O
                 Intent intent = new Intent(getApplicationContext(), AllCategories.class);
                 startActivity(intent);
                 break;
+
+            case R.id.nav_login:
+                startActivity(new Intent(getApplicationContext(), Login.class));
+                break;
+
 
         }
         return true;

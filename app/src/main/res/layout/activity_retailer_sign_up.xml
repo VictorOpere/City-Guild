@@ -53,7 +53,8 @@
                 app:endIconMode="clear_text"
                 app:endIconTint="@color/black"
                 app:boxStrokeWidthFocused="5dp"
-                app:boxStrokeColor="@color/black">
+                app:boxStrokeColor="@color/black"
+                android:id="@+id/signup_fullname">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
@@ -76,7 +77,8 @@
                 app:endIconMode="clear_text"
                 app:endIconTint="@color/black"
                 app:boxStrokeWidthFocused="5dp"
-                app:boxStrokeColor="@color/black">
+                app:boxStrokeColor="@color/black"
+                android:id="@+id/signup_username">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
@@ -99,7 +101,8 @@
                 app:endIconMode="clear_text"
                 app:endIconTint="@color/black"
                 app:boxStrokeWidthFocused="5dp"
-                app:boxStrokeColor="@color/black">
+                app:boxStrokeColor="@color/black"
+                android:id="@+id/signup_email">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
@@ -123,7 +126,8 @@
                 app:endIconTint="@color/black"
                 app:boxStrokeWidthFocused="5dp"
                 app:boxStrokeColor="@color/black"
-                app:passwordToggleTint="@color/black">
+                app:passwordToggleTint="@color/black"
+                android:id="@+id/signup_enter_password">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
@@ -162,7 +166,8 @@
             android:elevation="5dp"
             android:fontFamily="@font/muli_black"
             android:transitionName="transition_login_btn"
-            android:id="@+id/signup_login_button"/>
+            android:id="@+id/signup_login_button"
+            android:onClick="callLoginScreenFromSignUp"/>
 
 
 
