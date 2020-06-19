@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "914157158633",
-    "firebase_url": "https://city-guild.firebaseio.com",
-    "project_id": "city-guild",
-    "storage_bucket": "city-guild.appspot.com"
+    "project_number": "92369932617",
+    "firebase_url": "https://guildo-11c71.firebaseio.com",
+    "project_id": "guildo-11c71",
+    "storage_bucket": "guildo-11c71.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:914157158633:android:3f8cb0fa21e3d0c20f3078",
+        "mobilesdk_app_id": "1:92369932617:android:a1d5588bd81f1d3bad8a98",
         "android_client_info": {
           "package_name": "com.example.cityguild"
         }
       },
       "oauth_client": [
         {
-          "client_id": "914157158633-49eokr7illd19spq6v45tl34ek9thv98.apps.googleusercontent.com",
+          "client_id": "92369932617-mc863p607deon6c6uloliogus2mpa4a3.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBJ_dmhV30kpZT9kMoEohZOXVyE3Nc5qdc"
+          "current_key": "AIzaSyBOhFSF1M_q0IE4wV851Qkr-v-yY-aQtQQ"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "914157158633-49eokr7illd19spq6v45tl34ek9thv98.apps.googleusercontent.com",
+              "client_id": "92369932617-mc863p607deon6c6uloliogus2mpa4a3.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

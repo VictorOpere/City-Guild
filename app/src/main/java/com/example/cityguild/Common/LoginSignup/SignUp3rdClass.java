@@ -36,7 +36,20 @@ public class SignUp3rdClass extends AppCompatActivity {
         countryCodePicker = findViewById(R.id.country_code_picker);
 
 
-        Intent intent = new Intent();
+
+
+    }
+
+//    call Verify OTP screen
+
+    public void callVerifyOTPScreen(View view){
+
+//        if (!validatePhoneNumber()){
+//
+//            return;
+//        }
+
+        Intent intent = new Intent(getApplicationContext(),VerifyOTP.class);
         String getFullName = intent.getStringExtra("fullname");
         String getUsername = intent.getStringExtra("username");
         String getEmail = intent.getStringExtra("email");
@@ -44,19 +57,29 @@ public class SignUp3rdClass extends AppCompatActivity {
         String getGender = intent.getStringExtra("gender");
         String date = intent.getStringExtra("date");
 
-    }
 
-//    call Verify OTP screen
+        String getUserEnteredPhoneNumber = phoneNumber.getEditText().getText().toString().trim();
 
-    public void callVerifyOTPScreen(){
+//        get phone number
 
-        if (!validatePhoneNumber()){
+        String phoneNo = "+" + countryCodePicker.getFullNumber()+getUserEnteredPhoneNumber;
 
-            return;
-        }
+        intent.putExtra("fullname",getFullName);
+        intent.putExtra("username",getUsername);
+        intent.putExtra("email",getEmail);
+        intent.putExtra("password",getPassword);
 
-        startActivity(new Intent(getApplicationContext(),VerifyOTP.class));
-        finish();
+        intent.putExtra("gender",getGender);
+        intent.putExtra("date",date);
+        intent.putExtra("phonenumber",phoneNo);
+
+
+
+
+
+
+        startActivity(intent);
+
 
 
     }
@@ -76,15 +99,15 @@ public class SignUp3rdClass extends AppCompatActivity {
     private boolean validatePhoneNumber(){
 
         String value = phoneNumber.getEditText().getText().toString().trim();
-        String checkEmail = "[0-9]";
+        String checkPhoneNumber = "\\A\\w{1,20}\\z";
 
         if (value.isEmpty()){
 
             phoneNumber.setError("Field Cannot Be Empty");
             return false;
-        }else if(!value.matches(checkEmail)){
+        }else if(!value.matches(checkPhoneNumber)){
 
-            phoneNumber.setError("Invalid Email!");
+            phoneNumber.setError("Invalid Phone Number!");
             return false;
 
         }else {

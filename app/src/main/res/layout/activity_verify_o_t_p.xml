@@ -18,7 +18,8 @@
             android:layout_height="wrap_content"
             android:src="@drawable/close"
             android:tint="@color/black"
-            android:padding="5dp"/>
+            android:padding="5dp"
+            android:onClick="goToHomeFromOTP"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -59,8 +60,8 @@
 
         <com.chaos.view.PinView
             style="@style/PinWidget.PinView"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
             android:cursorVisible="true"
@@ -72,7 +73,8 @@
             app:itemHeight="50dp"
             app:itemRadius="2dp"
             app:itemWidth="50dp"
-            app:lineColor="@color/black" />
+            app:lineColor="@color/black"
+            android:id="@+id/pin_view"/>
 
         <Button
             android:layout_width="match_parent"
@@ -80,7 +82,8 @@
             android:background="@color/colorPrimary"
             android:text="Verify Code"
             android:textColor="@color/black"
-            android:layout_marginTop="30dp"/>
+            android:layout_marginTop="30dp"
+            android:onClick="callNextScreenFromOTP"/>
 
     </LinearLayout>
 
