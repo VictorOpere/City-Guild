@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "914157158633",
+    "firebase_url": "https://city-guild.firebaseio.com",
+    "project_id": "city-guild",
+    "storage_bucket": "city-guild.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:914157158633:android:3f8cb0fa21e3d0c20f3078",
+        "android_client_info": {
+          "package_name": "com.example.cityguild"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "914157158633-49eokr7illd19spq6v45tl34ek9thv98.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJ_dmhV30kpZT9kMoEohZOXVyE3Nc5qdc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "914157158633-49eokr7illd19spq6v45tl34ek9thv98.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
