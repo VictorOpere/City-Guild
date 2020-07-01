@@ -95,7 +95,7 @@
     <!--    forget password-->
 
 
-    <string name="forget_password_detail">Provide Your Accounts Email For Which You Want To Reset Your Password</string>
+    <string name="forget_password_detail">Provide Your Accounts Phone Number For Which You Want To Reset Your Password</string>
 
 
     <!--    make selection-->
@@ -113,9 +113,8 @@
     <string name="confirm_password">Confirm Password</string>
     <string name="password_updated">Password Updated</string>
     <string name="password_updated_success">Your Password Has Been Updated</string>
-
-
-
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>

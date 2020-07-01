@@ -34,6 +34,8 @@ public class SignUp2ndClass extends AppCompatActivity {
 
 
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,6 +49,9 @@ public class SignUp2ndClass extends AppCompatActivity {
         titleText = findViewById(R.id.signup_title_text);
         radioGroup = findViewById(R.id.radio_group);
         datePicker = findViewById(R.id.date_picker);
+
+
+
 
 
     }

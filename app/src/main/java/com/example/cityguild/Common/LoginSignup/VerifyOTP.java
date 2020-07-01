@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.chaos.view.PinView;
+import com.example.cityguild.Database.UserHelperClass;
 import com.example.cityguild.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -19,6 +20,8 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
 import com.google.firebase.auth.PhoneAuthCredential;
 import com.google.firebase.auth.PhoneAuthProvider;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.concurrent.TimeUnit;
 
@@ -29,6 +32,7 @@ public class VerifyOTP extends AppCompatActivity {
 
     PinView pinFromUser;
     String codeBySystem;
+    String getFullName, getUsername, getEmail, getPassword,getGender, date, phoneno;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,33 +41,20 @@ public class VerifyOTP extends AppCompatActivity {
 
         pinFromUser = findViewById(R.id.pin_view);
 
-        String _phoneno = getIntent().getStringExtra("phonenumber");
+         phoneno = getIntent().getStringExtra("phonenumber");
 
-        sendVerificationCodeToUser(_phoneno);
-
-    }
-
-    public void callNextScreenFromOTP(View view){
-
-
-        String code = pinFromUser.getText().toString();
-        if(!code.isEmpty()){
-
-            verifyCode(code);
-
-        }
-//        startActivity(new Intent(getApplicationContext(),SetNewPassword.class));
-//        finish();
+        getFullName = getIntent().getStringExtra("fullname");
+        getUsername = getIntent().getStringExtra("username");
+        getEmail =getIntent().getStringExtra("email");
+        getPassword = getIntent().getStringExtra("password");
+        getGender = getIntent().getStringExtra("gender");
+        date = getIntent().getStringExtra("date");
 
 
+        sendVerificationCodeToUser(phoneno);
 
     }
 
-    public void goToHomeFromOTP(View view){
-
-        startActivity(new Intent(getApplicationContext(),Login.class));
-
-    }
 
     private void sendVerificationCodeToUser(String _phoneno) {
 
@@ -128,7 +119,9 @@ public class VerifyOTP extends AppCompatActivity {
                         if (task.isSuccessful()) {
                             // Sign in success, update UI with the signed-in user's information
 
-                            Toast.makeText(VerifyOTP.this, "Verification Is Successful!", Toast.LENGTH_SHORT).show();
+//                            Toast.makeText(VerifyOTP.this, "Verification Is Successful!", Toast.LENGTH_SHORT).show();
+
+                            storeNewUsersData();
 
                         } else {
                             // Sign in failed, display a message and update the UI
@@ -143,6 +136,47 @@ public class VerifyOTP extends AppCompatActivity {
                 });
     }
 
+    private void storeNewUsersData() {
 
+        FirebaseDatabase rootnode = FirebaseDatabase.getInstance();
+        DatabaseReference reference = rootnode.getReference("Users");
+
+//        reference.setValue("Certified Vic");
+
+        UserHelperClass addNewUser = new UserHelperClass(getFullName,getUsername,getEmail,getPassword,getGender,date,phoneno);
+        reference.child(phoneno).setValue(addNewUser);
+        
+
+
+
+
+
+
+    }
+
+
+    public void callNextScreenFromOTP(View view){
+
+
+        String code = pinFromUser.getText().toString();
+        if(!code.isEmpty()){
+
+            verifyCode(code);
+
+        }
+//        startActivity(new Intent(getApplicationContext(),SetNewPassword.class));
+//        finish();
+
+
+
+    }
+
+    public void goToHomeFromOTP(View view){
+
+        startActivity(new Intent(getApplicationContext(),Login.class));
+
+    }
+
+    
 
 }
